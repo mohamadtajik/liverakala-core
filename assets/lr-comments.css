@@ -1,0 +1,358 @@
+/* ==========================================================================
+   LiveraKala Core - Soft Red Theme (Complete Overrides)
+   ========================================================================== */
+
+.lr-comments-section,
+.lr-comments-wrapper,
+.lr-comments-section *,
+.lr-comments-wrapper * {
+    font-family: 'iranYekan', Tahoma, sans-serif !important;
+}
+.lr-comments-section,
+.lr-comments-wrapper {
+    background: #ffffff;
+    border: 1px solid #eaeeef;
+    border-radius: 20px;
+    padding: 32px;
+    margin-top: 36px;
+    font-family: inherit;
+    direction: rtl;
+    text-align: right;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.03);
+    box-sizing: border-box;
+}
+
+.lr-comments-section-title,
+.lr-form-title {
+    font-size: 19px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 24px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lr-comments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* آیتم هر نظر */
+.lr-comment-item {
+    padding: 20px;
+    border: 1px solid #f1f5f9;
+    background: #fafbfc;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    transition: all 0.2s ease;
+}
+
+.lr-comment-item:hover {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+/* هدر نظر */
+.lr-comment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.lr-comment-header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* آواتار حرف اول نام */
+.lr-comment-avatar {
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, #e11d48, #be123c) !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(225, 29, 72, 0.15);
+}
+
+.lr-comment-author {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* برچسب‌ها */
+.lr-buyer-badge, .lr-admin-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 30px;
+}
+.lr-buyer-badge { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+.lr-admin-badge { background: #ecfdf5 !important; 
+    color: #047857 !important; 
+    border: 1px solid #a7f3d0 !important; }
+
+.lr-comment-date {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* ستاره‌ها */
+.lr-item-rating {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #f59e0b;
+    letter-spacing: 2px;
+}
+.lr-star-muted { color: #e2e8f0; }
+
+/* متن کامنت */
+.lr-comment-body {
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+.lr-comment-body p { margin: 0 0 8px 0; }
+.lr-comment-body p:last-child { margin-bottom: 0; }
+
+/* دکمه پاسخ و حالت هاور آن */
+.lr-reply-btn {
+    font-size: 12px !important;
+    color: #e11d48 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    padding: 4px 10px !important;
+    background: #fff1f2 !important;
+    border-radius: 6px !important;
+    transition: background 0.2s, color 0.2s !important;
+}
+.lr-reply-btn:hover,
+.lr-reply-btn:focus {
+    color: #be123c !important;
+    background: #ffe4e6 !important;
+}
+
+/* لینک لغو پاسخ (Cancel Reply) */
+#cancel-comment-reply-link,
+.lr-cancel-reply {
+    color: #e11d48 !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    margin-right: 12px !important;
+}
+#cancel-comment-reply-link:hover {
+    color: #be123c !important;
+    text-decoration: underline !important;
+}
+
+/* پاسخ‌های تو در تو */
+.lr-children-comments {
+    list-style: none;
+    padding: 0;
+    margin: 16px 24px 0 0;
+    border-right: 2px solid #cbd5e1;
+    padding-right: 16px;
+}
+
+.lr-reply-item {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    margin-top: 12px;
+}
+
+/* فرم ارسال نظر */
+.lr-rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    background: #f8fafc;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+}
+.lr-rating-wrapper label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* سیستم ستاره‌های فرم */
+.lr-star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.lr-star-rating input { display: none; }
+.lr-star-rating label {
+    font-size: 26px;
+    color: #cbd5e1;
+    cursor: pointer;
+    padding: 0 3px;
+    transition: color 0.15s ease;
+}
+.lr-star-rating input:checked ~ label,
+.lr-star-rating label:hover,
+.lr-star-rating label:hover ~ label {
+    color: #f59e0b;
+}
+
+.lr-form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 4px;
+}
+
+.lr-form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.lr-form-group label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.lr-form-group input,
+.lr-form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #1e293b;
+    background-color: #fcfcfc;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+
+.lr-form-group input:focus,
+.lr-form-group textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+    border-color: #e11d48 !important;
+    box-shadow: 0 0 0 4px rgba(225, 29, 72, 0.1) !important;
+}
+
+/* دکمه‌های ارسال (شامل تمام حالت‌های وردپرس و سفارشی) */
+.lr-comments-wrapper .lr-submit-btn,
+button.lr-submit-btn,
+input[type="submit"].lr-submit-btn,
+#submit,
+input#submit,
+button#submit,
+.form-submit input[type="submit"] {
+    background-color: #e11d48 !important;
+    color: #ffffff !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    padding: 14px 32px !important;
+    border: none !important;
+    border-radius: 12px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.2) !important;
+    width: auto !important;
+}
+
+.lr-comments-wrapper .lr-submit-btn:hover,
+button.lr-submit-btn:hover,
+input[type="submit"].lr-submit-btn:hover,
+#submit:hover,
+input#submit:hover,
+button#submit:hover,
+.form-submit input[type="submit"]:hover {
+    background-color: #be123c !important;
+    box-shadow: 0 6px 16px rgba(225, 29, 72, 0.3) !important;
+    transform: translateY(-1px) !important;
+}
+
+.lr-response-message {
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    display: none;
+}
+.lr-response-message.success { color: #047857; background: #ecfdf5; border: 1px solid #a7f3d0; display: block; }
+.lr-response-message.error { color: #b91c1c; background: #fef2f2; border: 1px solid #fecaca; display: block; }
+
+.lr-no-comments {
+    font-size: 14px;
+    color: #64748b;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* واکنش‌گرایی موبایل (دکمه ارسال بهینه و ظریف‌تر) */
+@media (max-width: 768px) {
+    .lr-comments-section,
+    .lr-comments-wrapper {
+        padding: 18px;
+        border-radius: 14px;
+        margin-top: 20px;
+    }
+    .lr-form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .lr-children-comments {
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+    .lr-comments-wrapper .lr-submit-btn,
+    button.lr-submit-btn,
+    input[type="submit"].lr-submit-btn,
+    #submit,
+    input#submit,
+    button#submit,
+    .form-submit input[type="submit"] {
+        width: 100% !important;
+        padding: 11px 20px !important; /* کاهش ارتفاع و حجم دکمه */
+        font-size: 14px !important;    /* سایز متن مناسب موبایل */
+        text-align: center !important;
+    }
+}
+/* استایل فیلدهای دارای خطا */
+.lr-form-group.has-error input,
+.lr-form-group.has-error textarea {
+    border-color: #e11d48 !important;
+    background-color: #fff1f2 !important;
+    box-shadow: 0 0 0 4px rgba(225, 29, 72, 0.1) !important;
+}
+
+.lr-field-error {
+    color: #e11d48 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    margin-top: 6px !important;
+    display: block !important;
+    animation: fadeInError 0.2s ease;
+}
+
+@keyframes fadeInError {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}

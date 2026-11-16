@@ -1,0 +1,243 @@
+/* اعمال فونت IranYekan */
+        .woocommerce-account .woocommerce,
+        .woocommerce-account .woocommerce input,
+        .woocommerce-account .woocommerce button,
+        .woocommerce-account .woocommerce label,
+        .woocommerce-account .woocommerce span,
+        .woocommerce-account .woocommerce a {
+            font-family: 'IranYekan', 'IRANSans', Tahoma, sans-serif !important;
+        }
+
+        /* پاکسازی کامل استایل‌های پیش‌فرض ووکامرس */
+        .woocommerce-account .woocommerce form.login,
+        .woocommerce-account .woocommerce form.register {
+            border: none !important;
+            box-shadow: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            background: transparent !important;
+        }
+
+        /* کارت اصلی و یکپارچه احراز هویت */
+        .woocommerce-account .woocommerce {
+            max-width: 420px !important;
+            margin: 40px auto !important;
+            background: #ffffff !important;
+            border: 1px solid #e2e8f0 !important;
+            border-radius: 20px !important;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02) !important;
+            padding: 35px !important;
+            box-sizing: border-box !important;
+            direction: rtl !important;
+            text-align: right !important;
+            overflow: hidden !important;
+        }
+
+        /* باکس اختصاصی نمایش خطاهای ایجکس و کلاینت */
+        .lk-ajax-error-box {
+            background: #fff1f2 !important;
+            border: 1px solid #fecdd3 !important;
+            border-radius: 12px !important;
+            padding: 12px 16px !important;
+            margin-bottom: 20px !important;
+            color: #991b1b !important;
+            font-size: 0.85rem !important;
+            line-height: 1.5 !important;
+            display: none;
+        }
+
+        /* مخفی کردن ارورهای پیش‌فرض ووکامرس */
+        .woocommerce-error {
+            display: none !important;
+        }
+
+        /* مدیریت ستون‌ها */
+        .woocommerce-account .u-columns.col2-set {
+            display: block !important;
+            width: 100% !important;
+        }
+        .woocommerce-account .u-columns.col2-set .col-1,
+        .woocommerce-account .u-columns.col2-set .col-2 {
+            width: 100% !important;
+            float: none !important;
+            margin: 0 !important;
+        }
+
+        /* مخفی کردن تیترهای تکراری ووکامرس */
+        .woocommerce-account .woocommerce-form-login > h2,
+        .woocommerce-account .woocommerce-form-register > h2,
+        .woocommerce-account h2 {
+            display: none !important;
+        }
+
+        /* مخفی کردن عناصر معلق و اضافی */
+        .woocommerce-account .woocommerce-MyAccount-navigation,
+        .woocommerce-account .avatar,
+        .woocommerce-form-register .woocommerce-privacy-policy-text,
+        .woocommerce-privacy-policy-text,
+        .site-info,
+        .copyright {
+            display: none !important;
+        }
+        .elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper {
+            display: none !important;
+        }
+
+        /* پیش‌فرض: فرم ورود نمایش داده شود و ثبت‌نام مخفی باشد */
+        .woocommerce-form-register {
+            display: none !important;
+        }
+        .woocommerce-form-login {
+            display: block !important;
+        }
+
+        /* حالت فعال‌سازی ثبت‌نام از طریق کلاس بدنه */
+        body.auth-mode-register .woocommerce-form-login {
+            display: none !important;
+        }
+        body.auth-mode-register .woocommerce-form-register {
+            display: block !important;
+        }
+
+        /* ردیف فیلدها */
+        .woocommerce-form-login .form-row,
+        .woocommerce-form-register .form-row {
+            float: none !important;
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            margin-bottom: 16px !important;
+            box-sizing: border-box !important;
+        }
+
+        /* لیبل فیلدها */
+        .woocommerce-form-login label,
+        .woocommerce-form-register label {
+            display: block !important;
+            margin-bottom: 6px !important;
+            font-size: 0.85rem !important;
+            font-weight: 600 !important;
+            color: #475569 !important;
+        }
+
+        /* اینپوت‌ها */
+        .woocommerce-form-login .input-text,
+        .woocommerce-form-register .input-text {
+            width: 100% !important;
+            height: 46px !important;
+            padding: 0 16px !important;
+            background: #f8fafc !important;
+            border: 1px solid #e2e8f0 !important;
+            border-radius: 12px !important;
+            font-size: 0.95rem !important;
+            color: #0f172a !important;
+            box-sizing: border-box !important;
+            outline: none !important;
+            transition: all 0.25s ease;
+        }
+        .woocommerce-form-login .input-text:focus,
+        .woocommerce-form-register .input-text:focus {
+            border-color: #ef4444 !important;
+            background: #ffffff !important;
+            box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1) !important;
+        }
+
+        /* دکمه‌های ارسال با تم قرمز */
+        .woocommerce-form-login .button,
+        .woocommerce-form-register .button {
+            float: none !important;
+            width: 100% !important;
+            height: 46px !important;
+            background: #ef4444 !important;
+            color: #ffffff !important;
+            border: none !important;
+            border-radius: 12px !important;
+            font-size: 0.95rem !important;
+            font-weight: 600 !important;
+            cursor: pointer !important;
+            margin-top: 10px !important;
+            margin-bottom: 0 !important;
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25) !important;
+            box-sizing: border-box !important;
+            transition: all 0.25s ease;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .woocommerce-form-login .button:hover,
+        .woocommerce-form-register .button:hover {
+            background: #dc2626 !important;
+            box-shadow: 0 6px 15px rgba(239, 68, 68, 0.35) !important;
+        }
+
+        /* حالت لودینگ دکمه (فقط هنگام درخواست سرور) */
+        .woocommerce-form-login .button.loading,
+        .woocommerce-form-register .button.loading {
+            opacity: 0.8;
+            cursor: not-allowed !important;
+            pointer-events: none;
+        }
+
+        /* انیمیشن چرخش آیکون لودینگ */
+        .lk-spinner {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #ffffff;
+            animation: lk-spin 0.7s linear infinite;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        @keyframes lk-spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* لینک فراموشی رمز و چک‌باکس */
+        .woocommerce-LostPassword {
+            margin-top: 12px !important;
+            text-align: center !important;
+            clear: both !important;
+        }
+        .woocommerce-LostPassword a {
+            color: #64748b !important;
+            font-size: 0.85rem !important;
+            text-decoration: none !important;
+        }
+        .woocommerce-LostPassword a:hover {
+            color: #ef4444 !important;
+        }
+        .woocommerce-form-login .woocommerce-form-login__rememberme {
+            font-size: 0.85rem !important;
+            color: #475569 !important;
+            margin-top: 10px !important;
+        }
+
+        /* باکس تغییر وضعیت داخل کارت */
+        .lk-auth-switch-box {
+            margin-top: 20px !important;
+            padding-top: 15px !important;
+            border-top: 1px solid #f1f5f9 !important;
+            text-align: center !important;
+            font-size: 0.88rem !important;
+            color: #64748b !important;
+            clear: both !important;
+            display: block !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
+        .lk-auth-switch-btn {
+            background: none;
+            border: none;
+            color: #ef4444;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 0 4px;
+            font-size: 0.88rem;
+        }
+        .lk-auth-switch-btn:hover {
+            text-decoration: underline;
+        }
